@@ -143,6 +143,152 @@ JWT_SECRET=your_jwt_secret_here
 - Caching with Redis
 - Database connection pooling
 
+## Viewing Diagrams
+
+The project includes detailed architecture and flow diagrams in the `docs/RESEARCH_DIAGRAMS.md` file. To view these diagrams:
+
+### Option 1: GitHub Web Interface
+1. Navigate to the `docs/RESEARCH_DIAGRAMS.md` file in the GitHub repository
+2. GitHub automatically renders Mermaid diagrams in markdown files
+
+### Option 2: VS Code
+1. Install the "Markdown Preview Mermaid Support" extension
+2. Open the markdown file
+3. Press `Ctrl+Shift+V` (Windows/Linux) or `Cmd+Shift+V` (Mac) to preview
+
+### Option 3: Mermaid Live Editor
+1. Visit [Mermaid Live Editor](https://mermaid.live)
+2. Copy the diagram code from the markdown file
+3. Paste into the editor to view and edit
+
+## Complete Project Setup
+
+### 1. Prerequisites Installation
+
+#### Windows:
+```bash
+# Install Chocolatey (Windows package manager)
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+# Install dependencies
+choco install nodejs python postgresql redis
+
+# Start PostgreSQL and Redis
+net start postgresql
+net start redis
+```
+
+#### Linux (Ubuntu/Debian):
+```bash
+# Update package list
+sudo apt update
+
+# Install dependencies
+sudo apt install nodejs npm python3 python3-venv postgresql redis-server
+
+# Start services
+sudo systemctl start postgresql
+sudo systemctl start redis-server
+```
+
+#### macOS:
+```bash
+# Install Homebrew if not installed
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install dependencies
+brew install node python postgresql redis
+
+# Start services
+brew services start postgresql
+brew services start redis
+```
+
+### 2. Database Setup
+
+```bash
+# Windows
+psql -U postgres
+CREATE DATABASE chatbot;
+CREATE USER chatbot_user WITH PASSWORD 'your_password';
+GRANT ALL PRIVILEGES ON DATABASE chatbot TO chatbot_user;
+
+# Linux/macOS
+sudo -u postgres psql
+CREATE DATABASE chatbot;
+CREATE USER chatbot_user WITH PASSWORD 'your_password';
+GRANT ALL PRIVILEGES ON DATABASE chatbot TO chatbot_user;
+```
+
+### 3. Project Setup
+
+```bash
+# Clone and enter directory
+git clone https://github.com/Z3-56/Bot.git
+cd Bot
+
+# Backend setup
+python -m venv venv
+source venv/bin/activate  # or `venv\Scripts\activate` on Windows
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env with your configuration
+
+# Frontend setup
+npm install
+```
+
+### 4. Running the Project
+
+#### Terminal 1 - Backend:
+```bash
+# Make sure virtual environment is activated
+python api_server.py
+```
+
+#### Terminal 2 - Frontend:
+```bash
+npm run dev
+```
+
+### 5. Verify Installation
+
+1. Backend API: Visit http://localhost:8000/docs
+2. Frontend App: Visit http://localhost:3000
+3. Redis: Run `redis-cli ping` (should return "PONG")
+4. Database: Run `psql -U chatbot_user -d chatbot -c "\l"` (should list databases)
+
+## Troubleshooting
+
+### Common Issues
+
+1. **PostgreSQL Connection Error**:
+   ```bash
+   # Check PostgreSQL status
+   pg_ctl status -D /usr/local/var/postgres  # macOS
+   pg_ctl status -D "C:\Program Files\PostgreSQL\13\data"  # Windows
+   systemctl status postgresql  # Linux
+   ```
+
+2. **Redis Connection Error**:
+   ```bash
+   # Check Redis status
+   redis-cli ping
+   ```
+
+3. **Python Dependencies**:
+   ```bash
+   pip install --upgrade pip
+   pip install -r requirements.txt --no-cache-dir
+   ```
+
+4. **Node.js Dependencies**:
+   ```bash
+   rm -rf node_modules package-lock.json
+   npm cache clean --force
+   npm install
+   ```
+
 ## Documentation
 
 - [NLP Implementation](docs/NLP_IMPLEMENTATION.md): Detailed documentation of the Natural Language Processing system
