@@ -1,0 +1,352 @@
+{
+  "common_queries": {
+    "greetings": {
+      "hello": "Hello! I'm your educational assistant for colleges and universities. How can I help you today?",
+      "hi": "Hi there! I'm here to help with information about educational institutions. What would you like to know?",
+      "hey": "Hey! Welcome to your education assistant. How may I assist you today?",
+      "good morning": "Good morning! I'm your educational guide for colleges. How can I help you today?",
+      "good afternoon": "Good afternoon! Looking for information about educational institutions? I'm here to help!",
+      "good evening": "Good evening! I'm your assistant for all queries related to education. What can I help you with?",
+      "namaste": "Namaste! I'm your educational assistant for colleges and universities. How can I assist you today?"
+    },
+    "general": {
+      "how are you": "I'm doing well, thank you for asking! I'm ready to help you with information about Indian colleges and universities. What would you like to know?",
+      "thank you": "You're welcome! If you have any more questions about educational institutions, feel free to ask anytime.",
+      "thanks": "Happy to help! If you need any more information about education, just let me know.",
+      "bye": "Goodbye! Feel free to return whenever you have questions about colleges and universities.",
+      "help": "I can help you with information about colleges, universities, admission processes, entrance exams, scholarships, and more. What specific information are you looking for?"
+    }
+  },
+  "top_colleges": {
+    "engineering": [
+      {
+        "name": "Indian Institute of Technology (IIT) Bombay",
+        "location": "Mumbai, Maharashtra",
+        "website": "https://www.iitb.ac.in/",
+        "admission_process": "Admission through JEE Advanced",
+        "courses": ["B.Tech", "M.Tech", "PhD"],
+        "ranking": "#1 in Engineering (NIRF 2024)",
+        "fees": "₹2.2 lakhs per annum (approx.)"
+      },
+      {
+        "name": "Indian Institute of Technology (IIT) Delhi",
+        "location": "New Delhi",
+        "website": "https://home.iitd.ac.in/",
+        "admission_process": "Admission through JEE Advanced",
+        "courses": ["B.Tech", "M.Tech", "PhD"],
+        "ranking": "#2 in Engineering (NIRF 2024)",
+        "fees": "₹2.2 lakhs per annum (approx.)"
+      },
+      {
+        "name": "Indian Institute of Technology (IIT) Madras",
+        "location": "Chennai, Tamil Nadu",
+        "website": "https://www.iitm.ac.in/",
+        "admission_process": "Admission through JEE Advanced",
+        "courses": ["B.Tech", "M.Tech", "PhD"],
+        "ranking": "#3 in Engineering (NIRF 2024)",
+        "fees": "₹2.2 lakhs per annum (approx.)"
+      },
+      {
+        "name": "National Institute of Technology (NIT) Tiruchirappalli",
+        "location": "Tiruchirappalli, Tamil Nadu",
+        "website": "https://www.nitt.edu/",
+        "admission_process": "Admission through JEE Main",
+        "courses": ["B.Tech", "M.Tech", "PhD"],
+        "ranking": "#1 among NITs (NIRF 2024)",
+        "fees": "₹1.4 lakhs per annum (approx.)"
+      },
+      {
+        "name": "Birla Institute of Technology and Science (BITS) Pilani",
+        "location": "Pilani, Rajasthan",
+        "website": "https://www.bits-pilani.ac.in/",
+        "admission_process": "Admission through BITSAT",
+        "courses": ["B.E.", "M.E.", "PhD"],
+        "ranking": "Top 10 in Engineering (NIRF 2024)",
+        "fees": "₹4.5 lakhs per annum (approx.)"
+      }
+    ],
+    "medical": [
+      {
+        "name": "All India Institute of Medical Sciences (AIIMS) Delhi",
+        "location": "New Delhi",
+        "website": "https://www.aiims.edu/",
+        "admission_process": "Admission through NEET-UG and AIIMS entrance exam",
+        "courses": ["MBBS", "MD", "MS", "DM", "PhD"],
+        "ranking": "#1 in Medical (NIRF 2024)",
+        "fees": "₹1,628 per annum (approx.)"
+      },
+      {
+        "name": "Christian Medical College (CMC) Vellore",
+        "location": "Vellore, Tamil Nadu",
+        "website": "https://www.cmch-vellore.edu/",
+        "admission_process": "Admission through NEET-UG and CMC entrance exam",
+        "courses": ["MBBS", "MD", "MS", "DM"],
+        "ranking": "Top 5 in Medical (NIRF 2024)",
+        "fees": "₹3.5 lakhs per annum (approx.)"
+      },
+      {
+        "name": "Armed Forces Medical College (AFMC) Pune",
+        "location": "Pune, Maharashtra",
+        "website": "https://www.afmc.nic.in/",
+        "admission_process": "Admission through NEET-UG and AFMC entrance exam",
+        "courses": ["MBBS", "MD", "MS"],
+        "ranking": "Top 10 in Medical (NIRF 2024)",
+        "fees": "₹1.2 lakhs per annum (approx.)"
+      }
+    ],
+    "management": [
+      {
+        "name": "Indian Institute of Management (IIM) Ahmedabad",
+        "location": "Ahmedabad, Gujarat",
+        "website": "https://www.iima.ac.in/",
+        "admission_process": "Admission through CAT, WAT, PI",
+        "courses": ["MBA", "PGPX", "PhD"],
+        "ranking": "#1 in Management (NIRF 2024)",
+        "fees": "₹23 lakhs for 2 years (approx.)"
+      },
+      {
+        "name": "Indian Institute of Management (IIM) Bangalore",
+        "location": "Bangalore, Karnataka",
+        "website": "https://www.iimb.ac.in/",
+        "admission_process": "Admission through CAT, WAT, PI",
+        "courses": ["MBA", "PGPX", "PhD"],
+        "ranking": "#2 in Management (NIRF 2024)",
+        "fees": "₹23 lakhs for 2 years (approx.)"
+      },
+      {
+        "name": "Indian Institute of Management (IIM) Calcutta",
+        "location": "Kolkata, West Bengal",
+        "website": "https://www.iimcal.ac.in/",
+        "admission_process": "Admission through CAT, WAT, PI",
+        "courses": ["MBA", "PGPX", "PhD"],
+        "ranking": "#3 in Management (NIRF 2024)",
+        "fees": "₹23 lakhs for 2 years (approx.)"
+      }
+    ],
+    "arts_and_science": [
+      {
+        "name": "St. Stephen's College",
+        "location": "Delhi",
+        "website": "https://www.ststephens.edu/",
+        "admission_process": "Admission through cut-off and interview",
+        "courses": ["BA", "BSc", "MA", "MSc"],
+        "ranking": "Top 5 in Arts (NIRF 2024)",
+        "fees": "₹40,000 per annum (approx.)"
+      },
+      {
+        "name": "Lady Shri Ram College for Women",
+        "location": "Delhi",
+        "website": "https://lsr.edu.in/",
+        "admission_process": "Admission through cut-off",
+        "courses": ["BA", "B.Com", "MA"],
+        "ranking": "Top 5 in Arts (NIRF 2024)",
+        "fees": "₹35,000 per annum (approx.)"
+      },
+      {
+        "name": "Loyola College",
+        "location": "Chennai, Tamil Nadu",
+        "website": "https://www.loyolacollege.edu/",
+        "admission_process": "Admission through entrance exam and interview",
+        "courses": ["BA", "BSc", "B.Com", "MA", "MSc", "M.Com"],
+        "ranking": "Top 10 in Arts & Science (NIRF 2024)",
+        "fees": "₹50,000 per annum (approx.)"
+      }
+    ]
+  },
+  "entrance_exams": {
+    "engineering": [
+      {
+        "name": "JEE Main",
+        "full_name": "Joint Entrance Examination Main",
+        "website": "https://jeemain.nta.nic.in/",
+        "conducting_body": "National Testing Agency (NTA)",
+        "eligibility": "12th pass with PCM",
+        "application_period": "December-January",
+        "exam_dates": "January, April",
+        "colleges": "NITs, IIITs, GFTIs"
+      },
+      {
+        "name": "JEE Advanced",
+        "full_name": "Joint Entrance Examination Advanced",
+        "website": "https://jeeadv.ac.in/",
+        "conducting_body": "IITs (rotating)",
+        "eligibility": "Top 2.5 lakh JEE Main qualifiers",
+        "application_period": "After JEE Main results",
+        "exam_dates": "May-June",
+        "colleges": "IITs"
+      },
+      {
+        "name": "BITSAT",
+        "full_name": "BITS Admission Test",
+        "website": "https://www.bitsadmission.com/",
+        "conducting_body": "BITS Pilani",
+        "eligibility": "12th pass with PCM, 75% aggregate",
+        "application_period": "January-May",
+        "exam_dates": "May-June",
+        "colleges": "BITS Pilani, Goa, Hyderabad"
+      }
+    ],
+    "medical": [
+      {
+        "name": "NEET-UG",
+        "full_name": "National Eligibility cum Entrance Test - Undergraduate",
+        "website": "https://neet.nta.nic.in/",
+        "conducting_body": "National Testing Agency (NTA)",
+        "eligibility": "12th pass with PCB, 50% aggregate",
+        "application_period": "December-January",
+        "exam_dates": "May",
+        "colleges": "All medical colleges in India"
+      },
+      {
+        "name": "NEET-PG",
+        "full_name": "National Eligibility cum Entrance Test - Postgraduate",
+        "website": "https://nbe.edu.in/",
+        "conducting_body": "National Board of Examinations (NBE)",
+        "eligibility": "MBBS degree",
+        "application_period": "January-February",
+        "exam_dates": "March-April",
+        "colleges": "All PG medical colleges in India"
+      }
+    ],
+    "management": [
+      {
+        "name": "CAT",
+        "full_name": "Common Admission Test",
+        "website": "https://iimcat.ac.in/",
+        "conducting_body": "IIMs (rotating)",
+        "eligibility": "Bachelor's degree with 50% marks",
+        "application_period": "August-September",
+        "exam_dates": "November-December",
+        "colleges": "IIMs and 100+ B-schools"
+      },
+      {
+        "name": "XAT",
+        "full_name": "Xavier Aptitude Test",
+        "website": "https://www.xatonline.in/",
+        "conducting_body": "XLRI Jamshedpur",
+        "eligibility": "Bachelor's degree",
+        "application_period": "August-December",
+        "exam_dates": "January",
+        "colleges": "XLRI and 150+ B-schools"
+      }
+    ]
+  },
+  "scholarships": [
+    {
+      "name": "Central Sector Scholarship Scheme",
+      "provider": "Ministry of Education, Government of India",
+      "eligibility": "Top 20 percentile in 12th board exams",
+      "amount": "₹12,000 per annum",
+      "website": "https://scholarships.gov.in/",
+      "application_period": "August-October"
+    },
+    {
+      "name": "Prime Minister's Scholarship Scheme",
+      "provider": "Government of India",
+      "eligibility": "Wards of ex-servicemen/ex-coast guards",
+      "amount": "₹2,500 per month for boys, ₹3,000 per month for girls",
+      "website": "https://www.ksb.gov.in/",
+      "application_period": "August-October"
+    },
+    {
+      "name": "Post-Matric Scholarship for SC Students",
+      "provider": "Ministry of Social Justice and Empowerment",
+      "eligibility": "SC students with family income less than ₹2.5 lakhs per annum",
+      "amount": "Course fees and maintenance allowance",
+      "website": "https://scholarships.gov.in/",
+      "application_period": "July-October"
+    },
+    {
+      "name": "INSPIRE Scholarship",
+      "provider": "Department of Science & Technology",
+      "eligibility": "Top 1% in 12th board exams, pursuing science courses",
+      "amount": "₹80,000 per annum",
+      "website": "https://online-inspire.gov.in/",
+      "application_period": "October-December"
+    }
+  ],
+  "admission_calendar": {
+    "engineering": {
+      "JEE Main Registration": "December-January",
+      "JEE Main Exam": "January, April",
+      "JEE Advanced Registration": "April-May",
+      "JEE Advanced Exam": "May-June",
+      "Counselling": "June-July",
+      "Academic Session Begins": "July-August"
+    },
+    "medical": {
+      "NEET-UG Registration": "December-January",
+      "NEET-UG Exam": "May",
+      "Counselling": "July-September",
+      "Academic Session Begins": "August-September"
+    },
+    "management": {
+      "CAT Registration": "August-September",
+      "CAT Exam": "November-December",
+      "Shortlisting": "January",
+      "WAT-PI": "February-March",
+      "Final Results": "April",
+      "Academic Session Begins": "June-July"
+    }
+  },
+  "colleges": {
+    "IIT_Bombay": {
+      "name": "Indian Institute of Technology Bombay",
+      "location": "Mumbai, Maharashtra",
+      "established": 1958,
+      "courses": ["B.Tech", "M.Tech", "PhD"],
+      "ranking": 1,
+      "website": "https://www.iitb.ac.in"
+    },
+    "IIT_Delhi": {
+      "name": "Indian Institute of Technology Delhi",
+      "location": "New Delhi",
+      "established": 1961,
+      "courses": ["B.Tech", "M.Tech", "PhD"],
+      "ranking": 2,
+      "website": "https://www.iitd.ac.in"
+    }
+  },
+  "exams": {
+    "JEE_Main": {
+      "name": "Joint Entrance Examination Main",
+      "type": "Engineering Entrance",
+      "frequency": "Twice a year",
+      "eligibility": "12th pass with PCM",
+      "website": "https://jeemain.nta.nic.in"
+    },
+    "NEET": {
+      "name": "National Eligibility cum Entrance Test",
+      "type": "Medical Entrance",
+      "frequency": "Once a year",
+      "eligibility": "12th pass with PCB",
+      "website": "https://neet.nta.nic.in"
+    }
+  },
+  "scholarships": {
+    "PMRF": {
+      "name": "Prime Minister's Research Fellowship",
+      "type": "Research",
+      "amount": "70,000-80,000 per month",
+      "eligibility": "Direct PhD admission in IITs/IISc"
+    },
+    "INSPIRE": {
+      "name": "Innovation in Science Pursuit for Inspired Research",
+      "type": "Higher Education",
+      "amount": "80,000 per year",
+      "eligibility": "Top 1% in 12th board exams"
+    }
+  },
+  "admissions": {
+    "engineering": {
+      "process": "Through JEE Main and Advanced",
+      "timeline": "April-July",
+      "documents": ["12th Marksheet", "JEE Score Card", "ID Proof"]
+    },
+    "medical": {
+      "process": "Through NEET",
+      "timeline": "May-September",
+      "documents": ["12th Marksheet", "NEET Score Card", "ID Proof"]
+    }
+  }
+}
