@@ -1,13 +1,8 @@
 # Educational Assistant Chatbot
 
-A modern, multilingual AI-powered educational chatbot built with React, TypeScript, and Tailwind CSS. The chatbot provides real-time assistance for educational queries, supporting multiple languages and various input methods.
+A modern, multilingual AI-powered educational chatbot with Python backend API server and React frontend. The system provides real-time assistance for educational queries, supporting multiple languages and various input methods.
 
-## Documentation
-
-- [NLP Implementation](docs/NLP_IMPLEMENTATION.md): Detailed documentation of the Natural Language Processing system
-- [Project Structure](#project-structure): Overview of the codebase organization
-- [Installation](#installation): Setup and deployment instructions
-- [Contributing](#contributing): Guidelines for contributors
+## Features
 
 - 🌐 Multilingual Support (English, Hindi, Marathi)
 - 🎙️ Voice Input Capabilities
@@ -16,9 +11,12 @@ A modern, multilingual AI-powered educational chatbot built with React, TypeScri
 - 🎨 Modern, Animated UI
 - 📱 Responsive Design
 - 🔒 Type-safe Implementation
+- 🔍 Google Search Integration
+- 🤖 NLP Processing
 
 ## Tech Stack
 
+### Frontend
 - React 18.3.1
 - TypeScript 5.5.3
 - Tailwind CSS 3.4.1
@@ -27,28 +25,130 @@ A modern, multilingual AI-powered educational chatbot built with React, TypeScri
 - Lucide React 0.344.0
 - Vite 5.4.2
 
+### Backend
+- Python 3.8+
+- FastAPI
+- PostgreSQL
+- Redis
+- Google Custom Search API
+
 ## Prerequisites
 
 - Node.js (v18 or higher)
+- Python (v3.8 or higher)
+- PostgreSQL
+- Redis
 - npm (v9 or higher)
 
 ## Installation
 
-1. Clone the repository:
+### 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd educational-assistant-chatbot
+git clone https://github.com/Z3-56/Bot.git
+cd Bot
 ```
 
-2. Install dependencies:
+### 2. Backend Setup
+
+#### a. Create and activate Python virtual environment:
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux/MacOS
+python3 -m venv venv
+source venv/bin/activate
+```
+
+#### b. Install Python dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+#### c. Configure environment variables:
+```bash
+cp .env.example .env
+# Edit .env file with your configuration
+```
+
+#### d. Initialize the database:
+```bash
+# Make sure PostgreSQL is running
+python api_server.py init_db
+```
+
+#### e. Start the API server:
+```bash
+python api_server.py
+# Server will start at http://localhost:8000
+```
+
+### 3. Frontend Setup
+
+#### a. Install Node.js dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+#### b. Start the development server:
 ```bash
 npm run dev
+# Frontend will be available at http://localhost:3000
 ```
+
+## API Server Configuration
+
+The `api_server.py` provides the following endpoints:
+
+```python
+# Main endpoints
+POST /api/chat            # Process chat messages
+POST /api/voice          # Handle voice input
+POST /api/image          # Process image uploads
+GET  /api/search        # Perform Google search
+
+# Admin endpoints
+GET  /api/health        # Check server health
+GET  /api/metrics       # Get performance metrics
+```
+
+### Environment Variables for API Server
+
+```env
+# Database
+DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+
+# Google API
+GOOGLE_API_KEY=your_google_api_key_here
+GOOGLE_CSE_ID=your_google_cse_id_here
+
+# Server Config
+API_PORT=8000
+API_HOST=0.0.0.0
+DEBUG=True
+
+# Security
+API_SECRET_KEY=your_secret_key_here
+JWT_SECRET=your_jwt_secret_here
+```
+
+### API Server Features
+
+- Rate limiting
+- JWT authentication
+- Request validation
+- Error handling
+- Performance monitoring
+- Caching with Redis
+- Database connection pooling
+
+## Documentation
+
+- [NLP Implementation](docs/NLP_IMPLEMENTATION.md): Detailed documentation of the Natural Language Processing system
+- [Project Structure](#project-structure): Overview of the codebase organization
+- [Installation](#installation): Setup and deployment instructions
+- [Contributing](#contributing): Guidelines for contributors
 
 ## Project Structure
 
